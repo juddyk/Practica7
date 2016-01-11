@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">Practica7</string>
+    <string name="app_name">APPRENDE</string>
+    <string name="name">Nombre</string>
+    <string name="lastname">Apellidos</string>
+    <string name="user">Nombre de usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="pass2">Confirmar contraseña</string>
+    <string name="next">Siguiente</string>
+    <string name="register2">Crear cuenta</string>
+    <string name="back">Volver</string>
+    <string name="start"> Ingresar </string>
+    <string name="logueo"> Si no tienes una cuenta registrate!</string>
+    <string name="logueo2"> Ó ingresa con: </string>
+    <string name="facebook_app_id">1195303160499079</string>
+    <string name="server_cliente_id">605711377212-pssjitbiel967eetv1kr7jrmrvcgess2.apps.googleusercontent.com</string>
+    <string name="google">Iniciar sesión con Google</string>
+    <string name="SO">Salir</string>
+    <string name="saludo">¡Bienvenido a APPrende!</string>
+    <string name="signed_int_fmt">%s</string>
+
+
 </resources>
