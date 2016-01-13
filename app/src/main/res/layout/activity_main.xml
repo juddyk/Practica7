@@ -22,12 +22,14 @@
             android:background="@drawable/ic_apprende"
             />
         <EditText
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
             android:hint="@string/user"
             />
         <EditText
+            android:id="@+id/etPassw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"

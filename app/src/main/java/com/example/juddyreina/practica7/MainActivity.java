@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
@@ -27,8 +29,10 @@ import com.google.android.gms.common.api.Status;
 
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener, View.OnClickListener {
     private Button BNext;
+    private Button BLogin;
     private Button BG;
-    private String name;
+    private EditText name;
+    private EditText passw;
 
     //FACEBOOK
     private CallbackManager cbM;
@@ -52,7 +56,10 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         mGoogleApiClient = new GoogleApiClient.Builder(this).enableAutoManage(this,this).addApi(Auth.GOOGLE_SIGN_IN_API,gso).build();
         BG = (Button) findViewById(R.id.bGoogle);
         LoginButton loginButton = (LoginButton) findViewById(R.id.bFB);
+        name=(EditText) findViewById(R.id.etName);
+        passw=(EditText) findViewById(R.id.etPassw);
         BNext = (Button) findViewById(R.id.bRegistro);
+        BLogin = (Button) findViewById(R.id.bIngresar);
         cbM = CallbackManager.Factory.create();
         atT = new AccessTokenTracker() {
             @Override
@@ -79,6 +86,18 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, registro.class);
                 startActivity(i);
+            }
+        });
+
+        BLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String n,p;
+                n=name.getText().toString();
+                p=passw.getText().toString();
+
+
+
             }
         });
 
